@@ -1,9 +1,8 @@
 /* ------header CSS---- */
 
 #header{
-    height:100vh;
-    background: linear-gradient(rgba(0,0,0,0.6), 
-    rgba(0,0,0,0.6)), url(./images/background.jpg);
+    height:95vh;
+    background: url(./images/background.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -26,6 +25,8 @@
 .user-box h1{
     color: #fff;
     font-weight: bold;
+    font-size: 50px;
+    font-family: algeria;
     margin: 10 px;
 }
 
@@ -47,7 +48,7 @@
 }
 
 .nav-bar{
-    background-color: grey;
+    background-color: rgb(17, 18, 43);
 }
 
 .nav-bar-brand img{
@@ -55,7 +56,7 @@
 }
 
 .nav-bar .fa-bars{
-    font-size: 35px;
+    font-size: 50px;
     color: white;
 }
 
@@ -71,7 +72,8 @@
 
 .nav-link
 {
-    color:white !important;
+    font-size: 20px;
+    color:white;
 }
 
 /* academics */
