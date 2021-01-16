@@ -30,12 +30,10 @@
     display: block;
     padding: 20px;
 }
-nav ul {
-    height: fit-content;
-}
 
 nav ul li a{
     font-size: 25px;
+    color: white;
 }
 #about h1 {
     margin-top: 10px;
