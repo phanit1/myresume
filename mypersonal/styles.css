@@ -108,6 +108,12 @@ nav ul li a:hover {
     color: white;
     font-size: 20;
 }
+.vertical { 
+    border-left: 4px solid white; 
+    height: 600px; 
+    position:absolute; 
+    left: 55%; 
+} 
 #contact {
     height: 100vh;
     background-image: url(./images/contactbg.jpg);
