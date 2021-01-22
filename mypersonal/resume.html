@@ -59,7 +59,7 @@
         </div>
         <div id ="skills">
           <div class="container">
-              <br><br><br><br><br>
+              <br><br><br><br>
               <!-- <h2 align= center style="color: white;">Skills Acquired by Me</h2> -->
               <div class="row">
                 <div class="col-md-4">
@@ -74,7 +74,7 @@
                 </div>
                 <div class="col-md-4">
                   <div class="thumbnail">
-                      <img src="./images/postgresql.png" style="width:50%">
+                      <img src="./images/mongodb.png" style="width:50%;height: auto;">
                   </div>
                 </div>
               </div>
@@ -95,7 +95,7 @@
                   </div>
                 </div>
               </div>
-              <br><br><br><br>
+              <br>
               <div class="row">
                 <div class="col-md-4">
                   <div class="thumbnail">
@@ -116,23 +116,118 @@
             </div>
       </div>
         <div id = "academics">
-            <br><br><br><br>
+            <br><br><br>
             <!-- <h1 align=center>this is academics</h1> -->
             <div class="container">
               <div class="row">
                 <div class="col-md-6">
-                  <h1 align=center>this is education</h1>
+                  <h2 align=center>Education</h2>
+                  <div>
+                    <ul style="list-style-type: none;">
+                    <li><h4>Master of Science in Information Technology</h4></li>
+                    <li><p><i>International Institute of Information Technology - Hyderabad</i></p></li>
+                    <li><p>2019-21 &nbsp; &nbsp;CGPA: 8.0</p></li>
+                  </div>
+                  <div>
+                    <ul style="list-style-type: none;">
+                    <li><h4>Bachelor of Technology in Computer Science Engineering</h4></li>
+                    <li><p><i>Vikas College of Engineering and Technology</i></p></li>
+                    <li><p>2014-18 &nbsp; &nbsp;Percentage: 70.02</p></li>
+                  </div>
+                  <div>
+                    <ul style="list-style-type: none;">
+                    <li><h4>Intermediate</h4></li>
+                    <li><p><i>Narayana Junior College</i></p></li>
+                    <li><p>2012-14 &nbsp; &nbsp;Percentage: 93.3</p></li>
+                  </div>
+                  <div>
+                    <ul style="list-style-type: none;">
+                    <li><h4>SSC</h4></li>
+                    <li><p><i>Nirmala High School</i></p></li>
+                    <li><p>2011-12 &nbsp; &nbsp;CGPA: 9.2</p></li>
+                  </div>
                 </div>
-                <div class="col-md-6">
-                  <h1 align=center>this is projects</h1>
+                <div class="col-md-6" id = "projects">
+                  <h2 align=center>Projects</h2>
+                  <div>
+                    <ul style="list-style-type: none;">
+                    <li><h4>Placement Prep Assistant - Mobile</h4></li>
+                    <li><p>Full Stack Developer</p></li>
+                    <li><p>Developed a mobile application using React-Native for students for placement purpose.
+                      This application helps the students to prepare for a placement by creating their own strategy
+                      based on their levels and notifies every day about the strategy which was created by student</p></li>
+                    <li><p>Technologies: React Native, Nodejs, MongoDB, Heroku</p></li>
+                  </div>
+                  <div>
+                    <ul style="list-style-type: none;">
+                      <li><h4>Cloud Security through Honeypot</h4></li>
+                      <li><p>Programmer</p></li>
+                      <li><p>Developed a solution using java which gives us information about the hacker trying to hack our user’s website.</p></li>
+                      <li><p>Technologies: Java, Oracle SQL, NetBeans IDE</p></li>
+                  </div>
                 </div>
               </div>
             </div>
         </div>
         <div id = "contact">
-            <br><br><h1 align=center>
-                this is contact
-            </h1>
+            <br><br>
+            <section class="Material-contact-section section-padding section-dark">
+              <div class="container">
+                  <div class="row">
+                      <!-- Section Titile -->
+                      <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+                          <h1 class="section-title">Love to Hear From You</h1>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <!-- Section Titile -->
+                      <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
+                        <p>In Academics:</p>
+                        <ul>
+                          <li>I worked as a front end developer and a back end developer</li>
+                          <li>I worked as a Java developer</li>
+                        </ul>
+                        <p>I can say that I can work as a Full Stack Developer</p>
+                        <p>I can say that I can work as a Java Developer</p>
+                      </div>
+                      <!-- contact form -->
+                      <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
+                          <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                              <!-- Name -->
+                              <div class="form-group label-floating">
+                                <label class="control-label" for="name">Name</label>
+                                <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
+                                <div class="help-block with-errors"></div>
+                              </div>
+                              <!-- email -->
+                              <div class="form-group label-floating">
+                                <label class="control-label" for="email">Email</label>
+                                <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
+                                <div class="help-block with-errors"></div>
+                              </div>
+                              <!-- Subject -->
+                              <div class="form-group label-floating">
+                                <label class="control-label">Subject</label>
+                                <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
+                                <div class="help-block with-errors"></div>
+                              </div>
+                              <!-- Message -->
+                              <div class="form-group label-floating">
+                                  <label for="message" class="control-label">Message</label>
+                                  <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                              <!-- Form Submit -->
+                              <div class="form-submit mt-5">
+                                  <button class="btn btn-common" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> Send Message</button>
+                                  <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                  <div class="clearfix"></div>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+            </section>
         </div>
     </body>
 </html>
