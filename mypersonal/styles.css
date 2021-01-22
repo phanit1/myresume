@@ -130,7 +130,7 @@ nav ul li a:hover {
     font-size: 20;
 }
 #form-submit{
-    border-radius: 3px;
-    border-color: aqua;
+    border-width: 3px;
+    border-color: cyan;
     color: white;
 }
