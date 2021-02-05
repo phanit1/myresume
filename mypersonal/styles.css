@@ -1,5 +1,6 @@
+/* Home Styling for webpage */
 #header {
-    height: 100vh;
+    height: 150vh;
     background-image: url(./images/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -8,75 +9,160 @@
 }
 #header h1{
     color: white;
-    padding-top: 275px;
-    font-weight: 1000;
-    font-size: 75;
+    padding-top: 30vh;
+    font-weight: 1000vh;
+    font-size: 15vh;
     font-family: 'Pristina';
     text-align: center;
-    /* text-transform: uppercase; */
 }
 
 #header ul {
     list-style-type: none;
     overflow: hidden;
-    padding-top: 30px;
-    margin-left: 390px;
+    padding-top: 10vh;
+    margin-left: 43vh;
   }
   
  #header li {
     float: left;
   }
 #header a{
-    font-size: 50px;
+    font-size: 10vh;
     text-align: center;
     color: white;
-    display: block;
-    padding: 20px;
+    display: inline-block;
+    padding: 3vh;
 }
 
+/* Home Styling for mobile */
+
+@media screen and (max-width: 600px) {
+    #header {
+        height: 150vw;
+        background-image: url(./images/background.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    #header h1{
+        color: white;
+        padding-top: 30vh;
+        font-weight: 1000vh;
+        font-size: 15vw;
+        font-family: 'Pristina';
+        text-align: center;
+    }
+    #header ul {
+        list-style-type: none;
+        overflow: hidden;
+        padding-top: 10vw;
+        margin-left: 10vw;
+      }
+      
+     #header li {
+        float: left;
+      }
+    #header a{
+        font-size: 10vw;
+        text-align: center;
+        color: white;
+        display: inline-block;
+        padding: 3vw;
+    }
+  }
+
+/* Navbar Styling for webpage */
+
 nav ul li a{
-    font-size: 23px;
+    font-size: 3vh;
     color: white;
 }
 
 nav ul li a:hover {
     color: cyan;
   }
+/* Navbar Styling for mobile */
+
+  @media screen and (max-width: 600px) {
+    nav ul li a{
+        font-size: 5vw;
+        color: white;
+    }
+    
+    nav ul li a:hover {
+        color: cyan;
+      }
+}
+
+/* About Styling for webpage */
+
 #about {
     height: 100vh;
     background-image: url(./images/aboutbg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: -25vh;
     background-attachment: fixed;
-
 }
 
 #about img{
-    width:300px;
-    height:400px;
-    margin-top: 150px;
-    margin-left: 200px;
+    width:20vw;
+    height:60vh;
+    margin-top: 25vh;
+    margin-left: 20vw;
     border-radius: 50%;
     float: left;
 }
-#about h1 {
-    margin-top: 10px;
-    padding-top: 10px;
+#about h2 {
     color: white;
+    font-size: 7vh;
 }
 #aboutmatter{
-    font-size: 30px;
+    font-size: 5vh;
     color: white;
-    margin-top: 200px;
-    padding-left: 350px;
-    margin-left: 450px;
-    padding-right:200px;
-    padding-top: 200px;
+    margin-top: 25vh;
+    padding-left: 10vw;
+    margin-left: 40vw;
+    padding-right:20vw;
+    padding-top: 25vh;
     width: 75%;
-    /* font-style: italic; */
-    /* color: black; */
+    
 }
+
+/* About Styling for mobile */
+@media screen and (max-width: 600px) {
+    #about {
+        height: 100vw;
+        background-image: url(./images/aboutbg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: -30vh;
+    }
+    
+    #about img{
+        width:30vw;
+        height:50vw;
+        margin-top: 20vh;
+        margin-left: 10vw;
+        border-radius: 50%;
+        float: left;
+    }
+    #about h2 {
+        font-size: 5vw;
+        color: white;
+    }
+    #aboutmatter{
+        font-size: 3vw;
+        color: white;
+    }
+    
+}
+/* Skills Styling for webpage */
+
 #skills {
     height: 100vh;
     background-image: url(./images/skillsbg.jpg);
@@ -87,8 +173,23 @@ nav ul li a:hover {
 
 }
 #skills .container .row {
-    margin-left: 70px;
+    margin-left: 10vw;
 }
+
+/* Skills Styling for mobile */
+@media screen and (max-width: 600px) {
+    #skills {
+        height: 100vw;
+        background-image: url(./images/skillsbg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    
+    }
+}
+/* Academics Styling for webpage */
+
 #academics {
     height: 100vh;
     background-image: url(./images/academicsbg.jpg);
@@ -99,21 +200,23 @@ nav ul li a:hover {
 
 }
 #academics h2 {
-    margin-top: 10px;
-    padding-top: 10px;
+    margin-top: 4vh;
+    padding-top: 4vh;
     color: white;
 }
 #academics ul {
-    margin-left: -50px;
-    width: 130%;
+    margin-left: -10vh;
+    width: 125%;
 }
 #projects ul
 {
-    margin-left: 50px;
+    margin-left: 8vh;
+    width: 125%;
+
 }
 #academics p {
     color: white;
-    font-size: 20;
+    font-size: 2vh;
 }
 .vertical { 
     border-left: 4px solid white; 
@@ -121,6 +224,45 @@ nav ul li a:hover {
     position:absolute; 
     left: 55%; 
 } 
+/* Academics Styling for mobile */
+@media screen and (max-width: 600px) {
+    #academics {
+        height: 100vh;
+        background-image: url(./images/academicsbg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    
+    }
+    #academics h2 {
+        margin-top: 4vw;
+        padding-top: 4vw;
+        color: white;
+    }
+    #academics ul {
+        margin-left: 1vw;
+        width: 130%;
+    }
+    #projects ul
+    {
+        margin-left: 5vw;
+        width: 130%;
+
+    }
+    #academics p {
+        color: white;
+        /* font-size: 2vw; */
+    }
+    .vertical { 
+        border-left: 4px solid white; 
+        height: 600px; 
+        position:absolute; 
+        left: 55%; 
+    } 
+}
+/* Contact Styling for webpage */
+
 #contact {
     height: 100vh;
     background-image: url(./images/contactbg.jpg);
@@ -155,3 +297,5 @@ nav ul li a:hover {
     width: 550px;
     transition: ease 0.5s;
   }
+
+  
