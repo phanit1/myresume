@@ -8,22 +8,40 @@
         <meta name="keywords" content="htmlcss bootstrap menu, fixed top, navbar, menu CSS examples" />
         <meta name="description" content="Bootstrap 5 fixed navbar  examples for any type of project, Bootstrap 5" />  
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <link href="./resume.css" rel="stylesheet">
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-        <script type="text/javascript">
-            document.addEventListener("DOMContentLoaded", function(){
-                // add padding top to show content behind navbar
-                navbar_height = document.querySelector('.navbar.fixed-top').offsetHeight;
-                document.body.style.paddingTop = navbar_height + 'px';
-            }); 
-            // DOMContentLoaded  end
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+          function sendmail(){
+            var name = $('#name').val();
+            var email = $('#email').val();
+            var subject = $('#msg_subject').val();
+            var message = $('#message').val()
+            var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message+'<br>';
+            Email.send({
+              SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+              To: "babithota5@gmail.com",
+              From: email,
+              Subject: "A new message from "+name+"through your website",
+              Body: Body
+            }).then(
+              message =>{
+                if(message=='OK'){
+                alert('Your mail has been send. Thank you for connecting.');
+                }
+                else{
+                  console.error (message);
+                  alert('There is error at sending message. ')
+                }
+              }
+            );
+          }
         </script>
-    </head>
+      </head>
     <body>
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -43,13 +61,12 @@
                     </ul>
                 </li>
                    <li class="nav-item"><a class="nav-link" href="#contact"> Contact </a></li>
-                   
                </ul>
              </div>
             </div>
            </nav>
           <div class="container-fluid" id = "home" align = "center">
-            <br><br><br><br>
+            <br><br><br>
             <h1 style="font-family: Pristina">Thota Phaneendhar</h1><br>
             <img src="./images/mypic.jpg" class="img-responsive" alt="..."><br><br>
             <h1 style="font-family: Pristina"><i>MERN Stack Developer</i></h1><br>
@@ -62,16 +79,16 @@
                 <li class = "list-inline-item"><a href="https://www.hackerrank.com/Phaneendhar"><i class="fab fa-hackerrank"></i></a></li>
                 <li class = "list-inline-item"><a href="tel:phone=7893434970"><i class="fa fa-phone"></i></a></li>
                 <li class = "list-inline-item"><a href="https://t.me/tphani1"><i class="fa fa-telegram"></i></a></li>
-                <li class = "list-inline-item"><a href=""onclick="alert('Sorry I dont use Whatsapp');"><i class="fa fa-whatsapp"></i></a></li>
+                <li class = "list-inline-item"><a href=""onclick="alert('Sorry I don't use Whatsapp');"><i class="fa fa-whatsapp"></i></a></li>
             </ul>
           </div>
-          <br>
           <div class="container-fluid" id = "skills">
+            <br><br><br>
             <h1 style="font-family: Pristina; text-align: center;">My Technical Skills</h1><br>
             <div class="row row-cols-3 row-cols-md-6">
               <div class="col">
                 <div class="card h-15">
-                  <img src="./images/java.png" class="card-img-top" alt="...">
+                  <img src="./images/java.png" class="card-img-top img-responsive" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Java</h5>
                   </div>
@@ -79,7 +96,7 @@
               </div>
               <div class="col">
                 <div class="card h-15">
-                  <img src="./images/python.png" class="card-img-top" alt="...">
+                  <img src="./images/python.png" class="card-img-top img-responsive" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Python</h5>
                   </div>
@@ -87,7 +104,7 @@
               </div>
               <div class="col">
                 <div class="card h-15">
-                  <img src="./images/mongodb.png" class="card-img-top" alt="...">
+                  <img src="./images/mongodb.png" class="card-img-top img-responsive" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">MongoDB</h5>
                   </div>
@@ -95,7 +112,7 @@
               </div>
               <div class="col">
                 <div class="card h-15">
-                  <img src="./images/html.png" class="card-img-top" alt="...">
+                  <img src="./images/html.png" class="card-img-top img-responsive" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">HTML5</h5>
                   </div>
@@ -103,7 +120,7 @@
               </div>
               <div class="col">
                 <div class="card h-15">
-                  <img src="./images/css.png" class="card-img-top" alt="...">
+                  <img src="./images/css.png" class="card-img-top img-responsive" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">CSS3</h5>
                   </div>
@@ -111,7 +128,7 @@
               </div>
               <div class="col">
                 <div class="card h-15">
-                  <img src="./images/js.png" class="card-img-top" alt="...">
+                  <img src="./images/js.png" class="card-img-top img-responsive" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">JavaScript</h5>
                   </div>
@@ -119,7 +136,7 @@
               </div>
               <div class="col">
                 <div class="card h-15">
-                  <img src="./images/reactjs.png" class="card-img-top" alt="...">
+                  <img src="./images/reactjs.png" class="card-img-top img-responsive" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">React JS</h5>
                   </div>
@@ -127,7 +144,7 @@
               </div>
               <div class="col">
                 <div class="card h-15">
-                  <img src="./images/native.png" class="card-img-top" alt="...">
+                  <img src="./images/native.png" class="card-img-top img-responsive" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">React Native</h5>
                   </div>
@@ -135,7 +152,7 @@
               </div>
               <div class="col">
                 <div class="card h-15">
-                  <img src="./images/nodejs.png" class="card-img-top" alt="...">
+                  <img src="./images/nodejs.png" class="card-img-top img-responsive" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Node JS</h5>
                   </div>
@@ -143,7 +160,7 @@
               </div>
               <div class="col">
                 <div class="card h-15">
-                  <img src="./images/postgresql.png" class="card-img-top" alt="...">
+                  <img src="./images/postgresql.png" class="card-img-top img-responsive" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">PostgreSQL</h5>
                   </div>
@@ -151,7 +168,7 @@
               </div>
               <div class="col">
                 <div class="card h-15">
-                  <img src="./images/github.png" class="card-img-top" alt="...">
+                  <img src="./images/github.png" class="card-img-top img-responsive" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">GitHub</h5>
                   </div>
@@ -159,7 +176,7 @@
               </div>
               <div class="col">
                 <div class="card h-15">
-                  <img src="./images/vscode.jpg" class="card-img-top" alt="...">
+                  <img src="./images/vscode.jpg" class="card-img-top img-responsive" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Visual Studio Code</h5>
                   </div>
@@ -167,23 +184,125 @@
               </div>
             </div>
           </div>
-          <br>
           <div class="container-fluid" id = "academics">
+            <br><br><br>
             <h3>Academics Content</h3>
-            <p>Use the .justify-content-center class to center the navigation bar.</p>
-            <p>In this example, the navbar will be centered on medium, large and extra large screens. On small screens it will be displayed vertically and left-aligned (because of the .navbar-expand-sm class).</p>
+            <table class="table table-striped table-hover table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <br>
-          <div class="container-fluid" id = "projets">
+          <div class="container-fluid" id = "projects">
+            <br><br><br>
             <h3>Projects Content</h3>
-            <p>Use the .justify-content-center class to center the navigation bar.</p>
-            <p>In this example, the navbar will be centered on medium, large and extra large screens. On small screens it will be displayed vertically and left-aligned (because of the .navbar-expand-sm class).</p>
+            <div class="row row-cols-1 row-cols-md-2 g-1">
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Placement Prep Assistant - Mobile</h5>
+                    <p class="card-text">Full Stack Developer</p>
+                    <p class="card-text">Developed a mobile application using React-Native for students for placement purpose. This application helps the students to prepare for a placement by creating their own strategy based on their levels and notifies every day about the strategy which was created by student</p>
+                    <p class="card-text">Technologies: React Native, Nodejs, MongoDB, Heroku</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Cloud Security through Honeypot</h5>
+                    <p class="card-text">Programmer</p>
+                    <p class="card-text">Developed a solution using java which gives us information about the hacker trying to hack our user’s website</p>
+                    <p class="card-text">Technologies: Java, Oracle SQL, NetBeans IDE</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <br>
           <div class="container-fluid" id = "contact">
-            <h3>Contact Content</h3>
-            <p>Use the .justify-content-center class to center the navigation bar.</p>
-            <p>In this example, the navbar will be centered on medium, large and extra large screens. On small screens it will be displayed vertically and left-aligned (because of the .navbar-expand-sm class).</p>
+            <br><br><br>
+            <div class="container">
+              <div class="container">
+                <div class="row">
+                    <!-- Section Titile -->
+                    <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+                        <h1 class="section-title">Love to Hear From You</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Section Titile -->
+                    <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
+                      <p>In Academics:</p>
+                      <ul>
+                        <li>I worked as a front end developer and a back end developer</li>
+                        <li>I worked as a Java developer</li>
+                      </ul>
+                      <p>I can say that I can work as a Full Stack Developer</p>
+                      <p>I can say that I can work as a Java Developer</p>
+                    </div>
+                    <!-- contact form -->
+                    <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
+                        <form class="shake" role="form" action="javascript:sendmail()" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                            <!-- Name -->
+                            <div class="form-group label-floating">
+                              <label class="control-label" for="name">Name</label>
+                              <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
+                              <div class="help-block with-errors"></div>
+                            </div><br>
+                            <!-- email -->
+                            <div class="form-group label-floating">
+                              <label class="control-label" for="email">Email</label>
+                              <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
+                              <div class="help-block with-errors"></div>
+                            </div><br>
+                            <!-- Subject -->
+                            <div class="form-group label-floating">
+                              <label class="control-label">Subject</label>
+                              <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
+                              <div class="help-block with-errors"></div>
+                            </div><br>
+                            <!-- Message -->
+                            <div class="form-group label-floating">
+                                <label for="message" class="control-label">Message</label>
+                                <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div><br>
+                            <!-- Form Submit -->
+                            <div class="form-submit mt-5">
+                                <!-- <button class="btn btn-common" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> Send Message</button>
+                                <div id="msgSubmit" class="h3 text-center hidden"></div> -->
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                                <div class="clearfix"></div><br>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
           </div>
     </body>
 </html>
