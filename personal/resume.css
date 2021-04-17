@@ -49,7 +49,21 @@
     background-size: cover;
     padding: auto;
 }
+#academics p {
+    font-size: 3vh;
+}
 @media screen and (max-width: 600px) {
+    #home {
+        height: 100vh;
+        background-image: url("./images/background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: aliceblue;
+        background-position: center;
+        background-size: cover;
+        padding: auto;
+    }
+
     #contact {
     height: 150vh;
     background-image: url("./images/contactbg.jpg");
@@ -61,7 +75,7 @@
     padding: auto;
     }
     #academics {
-        height: 110vh;
+        height: 100vh;
         background-image: url("./images/academicsbg.jpg");
         background-size: cover;
         background-repeat: no-repeat;
@@ -69,5 +83,8 @@
         background-position: center;
         background-size: cover;
         padding: auto;
+    }
+    #academics p {
+        font-size: 2vh;
     }
 }
